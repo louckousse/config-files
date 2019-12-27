@@ -1,0 +1,37 @@
+TO-DO install
+
+sudo apt install zsh
+sudo apt install git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl https://sh.rustup.rs -sSf | sh
+sudo apt install gcc-multilib
+sudo apt install cmake
+cargo install exa
+cargo install fd-find
+
+sudo apt install python-pip
+cargo install fd-find
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+cd /usr/bin
+sudo curl -O https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping
+sudo chmod +x prettyping
+sudo apt install neovim
+
+sudo apt install npm
+npm install -g diff-so-fancy
+curl -s "https://get.sdkman.io" | bash
+
+sudo vim /etc/sysctl.conf
+  fs.inotify.max_user_watches = 524288
+  > sudo sysctl -p --system
+
+Autojump :
+  git clone git://github.com/wting/autojump.git
+  cd autojump
+  ./install.py or ./uninstall.py
+
+
+
+
+clock : %b-%d %H:%M
