@@ -8,7 +8,7 @@
   pr		= pull --rebase
   plo	        = pull --ff-only origin master
   st            = status
-	l             = log --graph --date=format:%d-%m-%y|%H.%M --pretty=format:\"%C(yellow)%h%Creset%C(cyan) %cd%Creset %s %Creset%C(green)%an\"
+  l             = log --graph --date=format:%d-%m-%y|%H.%M --pretty=format:\"%C(yellow)%h%Creset%C(cyan) %cd%Creset %s %Creset%C(green)%an\"
   la		= log --all --graph --pretty=format:\"%C(yellow)%h%Creset%d %C(cyan) %cr%Creset %s %Creset%C(green)%an\"
   unstage       = reset -q HEAD --
   discard       = checkout --
@@ -30,3 +30,5 @@
 [user]
 	email = louckousse@flatbrains.me
 	name = louckousse
+[help]
+	autocorrect = 1

@@ -30,7 +30,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 # plugin:autojump
-source /usr/share/autojump/autojump.sh
+# source /usr/share/autojump/autojump.sh
 
 # plugin:zsh-autosuggestions
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=0"
@@ -89,10 +89,8 @@ alias gitroot='cd `git rev-parse --show-toplevel`'
 
 # Paths
 export PYTHONPATH=$PYTHONPATH:./.pip
-export JAVA_HOME=/opt/lib/jdk1.8.0_172
 export GOPATH=$HOME/Prog/project/go
-export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$JAVA_HOME/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH
-source $HOME/.bw
+export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH
 # GPG
 export GPG_TTY=$(tty)
 
