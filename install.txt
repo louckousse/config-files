@@ -31,7 +31,11 @@ Autojump :
   cd autojump
   ./install.py or ./uninstall.py
 
-
+sudo apt install fonts-firacode
 
 
 clock : %b-%d %H:%M
+
+setxkbmap intl
+
+sudo sed -i /usr/share/X11/locale/en_US.UTF-8/Compose -e 's/ć/ç/g' -e 's/Ć/Ç/g'

@@ -65,6 +65,8 @@ alias src='source ~/.zshrc'
 alias ping='prettyping --nolegend'
 alias po='ping 8.8.8.8'
 
+alias ops='openvpn3 session-start --config ~/client.ovpn'
+alias ope='openvpn3 session-manage --disconnect -c /home/louckousse/client.ovpn'
 # Some keyboard special bindings
 bindkey "^[[3~"    delete-char
 bindkey "^[3;5~"   delete-char
@@ -90,7 +92,8 @@ alias gitroot='cd `git rev-parse --show-toplevel`'
 # Paths
 export PYTHONPATH=$PYTHONPATH:./.pip
 export GOPATH=$HOME/Prog/project/go
-export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH
+export IDEAPATH=$HOME/Prog/ide/idea-IC-203.7148.57/bin
+export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH:$IDEAPATH
 # GPG
 export GPG_TTY=$(tty)
 
@@ -105,9 +108,9 @@ if [ -f $HOME/.profile ] ; then
 fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/lucas/.sdkman"
-[[ -s "/home/lucas/.sdkman/bin/sdkman-init.sh" ]] && source "/home/lucas/.sdkman/bin/sdkman-init.sh"
-export PATH="/home/lucas/Prog/ide/idea-IC-183.4886.37/bin:/home/linuxbrew/.linuxbrew/bin:$PATH"
+export SDKMAN_DIR="/home/louckousse/.sdkman"
+[[ -s "/home/louckousse/.sdkman/bin/sdkman-init.sh" ]] && source "/home/louckousse/.sdkman/bin/sdkman-init.sh"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 

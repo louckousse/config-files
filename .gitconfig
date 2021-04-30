@@ -5,11 +5,11 @@
   interactive   = auto
 [alias]
   pl            = pull --ff-only
-  pr		= pull --rebase
-  plo	        = pull --ff-only origin master
+  pr            = pull --rebase
+  plo           = pull --ff-only origin master
   st            = status
   l             = log --graph --date=format:%d-%m-%y|%H.%M --pretty=format:\"%C(yellow)%h%Creset%C(cyan) %cd%Creset %s %Creset%C(green)%an\"
-  la		= log --all --graph --pretty=format:\"%C(yellow)%h%Creset%d %C(cyan) %cr%Creset %s %Creset%C(green)%an\"
+  la            = log --all --graph --pretty=format:\"%C(yellow)%h%Creset%d %C(cyan) %cr%Creset %s %Creset%C(green)%an\"
   unstage       = reset -q HEAD --
   discard       = checkout --
   uncommit      = reset --mixed HEAD~
@@ -17,18 +17,18 @@
   branches      = branch -a
   tags          = tag
   stashes       = stash list
-  r		= checkout HEAD --
-  list		= diff-tree --no-commit-id --name-only -r
-  fp		= fetch --prune --all
-  fixup		= !sh -c 'SHA=$(git rev-parse $1)\
-		&& git commit --fixup $SHA \
-		&& git rebase -i --autosquash $SHA~'
+  r             = checkout HEAD --
+  list          = diff-tree --no-commit-id --name-only -r
+  fp            = fetch --prune --all
+  fixup         = !sh -c 'SHA=$(git rev-parse $1)\
+                          && git commit --fixup $SHA \
+                          && git rebase -i --autosquash $SHA~'
 [core]
   excludesfile  = ~/.gitignore
-  pager		= diff-so-fancy | more -f -25
+  pager         = diff-so-fancy | more -f -25
 
 [user]
-	email = louckousse@flatbrains.me
-	name = louckousse
+  email         = louckousse@flatbrains.me
+  name          = louckousse
 [help]
-	autocorrect = 1
+  autocorrect   = 1
