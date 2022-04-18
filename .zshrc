@@ -93,7 +93,7 @@ alias gitroot='cd `git rev-parse --show-toplevel`'
 export PYTHONPATH=$PYTHONPATH:./.pip
 export GOPATH=$HOME/Prog/project/go
 export IDEAPATH=$HOME/Prog/ide/idea-IC-203.7148.57/bin
-export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH:$IDEAPATH
+export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH:$IDEAPATH:/.var/app/com.getpostman.Postman
 # GPG
 export GPG_TTY=$(tty)
 
