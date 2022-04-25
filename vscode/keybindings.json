@@ -1,22 +1,22 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "ctrl+shift+d",
-        "command": "-workbench.view.debug"
-    },
-    {
-        "key": "ctrl+shift+d",
-        "command": "-extension.disconnect",
-        "when": "editorTextFocus && editorLangId == 'sql'"
-    },
-    {
-        "key": "ctrl+shift+d",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus"
-    }
+  {
+    "key": "ctrl+shift+d",
+    "command": "-workbench.view.debug"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "-extension.disconnect",
+    "when": "editorTextFocus && editorLangId == 'sql'"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  }
 ]

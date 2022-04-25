@@ -13,14 +13,35 @@
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "python.jediEnabled": false,
-    "window.zoomLevel": 0,
     "editor.tabSize": 2,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code'",
     "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
     "files.insertFinalNewline": true,
     "eslint.autoFixOnSave": true,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "python.languageServer": "Default",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "[python]": {
+
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": false
+    },
+    "editor.parameterHints.enabled": false
 }
