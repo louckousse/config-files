@@ -15,7 +15,7 @@
     "python.jediEnabled": false,
     "editor.tabSize": 2,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code'",
+    "editor.fontFamily": "'Fira code'",
     "editor.formatOnType": true,
     "files.insertFinalNewline": true,
     "eslint.autoFixOnSave": true,
