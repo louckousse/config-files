@@ -29,7 +29,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-# plugin:autojump
+#plugin:autojump
 # source /usr/share/autojump/autojump.sh
 
 # plugin:zsh-autosuggestions
@@ -65,7 +65,8 @@ alias src='source ~/.zshrc'
 alias ping='prettyping --nolegend'
 alias po='ping 8.8.8.8'
 
-alias ops='openvpn3 session-start --config ~/client.ovpn'
+#alias ops='openvpn3 session-start --config ~/client.ovpn'
+alias ops='sudo openvpn ~/client.ovpn'
 alias ope='openvpn3 session-manage --disconnect -c /home/louckousse/client.ovpn'
 # Some keyboard special bindings
 bindkey "^[[3~"    delete-char
@@ -93,7 +94,8 @@ alias gitroot='cd `git rev-parse --show-toplevel`'
 export PYTHONPATH=$PYTHONPATH:./.pip
 export GOPATH=$HOME/Prog/project/go
 export IDEAPATH=$HOME/Prog/ide/idea-IC-203.7148.57/bin
-export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH:$IDEAPATH:/.var/app/com.getpostman.Postman
+export PATH=/usr/local/go/bin:/snap/bin:/opt/lib/apache-maven-3.5.3/bin:$PATH:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:$HOME/.cabal/bin:/usr/bin/cargo:$HOME/.cargo/bin:$GOPATH:$HOME/Prog/ide/Postman/app/Postman:/var/lib/snapd/bin
+export PICO_SDK_PATH=/home/louckousse/Prog/keebs/pico-sdk/
 # GPG
 export GPG_TTY=$(tty)
 
@@ -110,7 +112,7 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/louckousse/.sdkman"
 [[ -s "/home/louckousse/.sdkman/bin/sdkman-init.sh" ]] && source "/home/louckousse/.sdkman/bin/sdkman-init.sh"
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/louckousse/.local/bin:$PATH"
 export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 
